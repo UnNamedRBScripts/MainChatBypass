@@ -1,3 +1,4 @@
+--StarProject is your daddy
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
     Name = "Chat Bypass By StarProject",
@@ -58,10 +59,3 @@ local Window = Rayfield:CreateWindow({
         loadstring(game:HttpGet("https://pastebin.com/raw/A2R7TdJV"))()
     end,
  })
-local Button = Tab:CreateButton({
-    Name = "Orca Thingy",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/richie0866/orca/master/public/snapshot.lua"))()
-    end,
- })
-
