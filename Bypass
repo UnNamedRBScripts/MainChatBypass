@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
        Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
- local Tab = Window:CreateTab("ChatBypass", 13851095509) -- Title, Image
+ local Tab = Window:CreateTab("Skibidi", 13851095509) -- Title, Image
  local Section = Tab:CreateSection("ChatBypass")
  local Button = Tab:CreateButton({
     Name = "Chat Bypass",
@@ -33,7 +33,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
  local Button = Tab:CreateButton({
-    Name = "Report Protection (wait for notif)",
+    Name = "Report Protection",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua"))()
     end,
@@ -42,5 +42,19 @@ local Window = Rayfield:CreateWindow({
     Name = "Chat Refresher",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/UnNamedRBScripts/chat-refresh-gui/main/yes"))()
+    end,
+ })
+ local Tab = Window:CreateTab("Dahood", 13851095509)
+ local Button = Tab:CreateButton({
+    Name = "Dahood Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex"))()
+    end,
+ })
+ local Tab = Window:CreateTab("Universal", 13851095509)
+ local Button = Tab:CreateButton({
+    Name = "Reviz Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/A2R7TdJV"))()
     end,
  })
