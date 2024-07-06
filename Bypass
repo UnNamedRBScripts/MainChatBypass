@@ -71,3 +71,9 @@ local Window = Rayfield:CreateWindow({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/richie0866/orca/master/public/snapshot.lua"))()
    end,
  })
+ local Button = Tab:CreateButton({
+   Name = "Esp",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/ESP-Script/main/ESP.lua"))()
+   end,
+ })
