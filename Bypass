@@ -174,3 +174,15 @@ local Window = Rayfield:CreateWindow({
       loadstring(game:HttpGet("https://pastebin.com/raw/8zfmRFrr"))()
   end,
  })
+-- This is the message you want to send in the chat
+local message = "StarProject On Top!"
+
+-- Function to send a message in the chat
+local function sendMessage()
+    local player = game.Players.LocalPlayer
+    local chatService = game:GetService("Chat")
+    chatService:Chat(player.Character.Head, message, Enum.ChatColor.Red)
+end
+
+-- Execute the sendMessage function
+sendMessage()
