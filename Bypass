@@ -132,6 +132,12 @@ local Window = Rayfield:CreateWindow({
  })
  local Tab = Window:CreateTab("Dahood", 13851095509)
  local Button = Tab:CreateButton({
+    Name = "Dahood TBO (troll)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/UnNamedRBScripts/TBO-Dahood-Trolling/main/Trolling"))()
+    end,
+ })
+ local Button = Tab:CreateButton({
     Name = "Dahood Vortex",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex"))()
@@ -174,15 +180,4 @@ local Window = Rayfield:CreateWindow({
       loadstring(game:HttpGet("https://pastebin.com/raw/8zfmRFrr"))()
   end,
  })
--- This is the message you want to send in the chat
-local message = "StarProject On Top!"
-
--- Function to send a message in the chat
-local function sendMessage()
-    local player = game.Players.LocalPlayer
-    local chatService = game:GetService("Chat")
-    chatService:Chat(player.Character.Head, message, Enum.ChatColor.Red)
-end
-
--- Execute the sendMessage function
-sendMessage()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/UnNamedRBScripts/say-somethin-in-chat/main/Chat"))()
